@@ -99,6 +99,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cmk="cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
 alias gsur="gsu --recursive"
+alias gpb="gp origin HEAD"
 
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
