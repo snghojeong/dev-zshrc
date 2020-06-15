@@ -75,6 +75,7 @@ source $ZSH/oh-my-zsh.sh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
+export PLANET_VENERA_HOME=~/workspace/planet-venera
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -100,6 +101,8 @@ source $ZSH/oh-my-zsh.sh
 alias cmk="cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
 alias gsur="gsu --recursive"
 alias gpb="gp origin HEAD"
+alias cdvenera="cd $PLANET_VENERA_HOME"
+alias cdconfig="cd /Users/user/Library/Containers/com.nhncorp.vpdt.Gilround/Data/Library/Ampkit"
 
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
