@@ -76,8 +76,8 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 export PLANET_VENERA_HOME=~/workspace/planet-venera
-export AMPKIT_HOME=~/workspace/M31
-export M31_HOME=~/workspace/M31/ext/andromeda-sdk/submodules/ampkit
+export M31_HOME=~/workspace/M31
+export AMPKIT_HOME=~/workspace/M31/ext/andromeda-sdk/submodules/ampkit
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
