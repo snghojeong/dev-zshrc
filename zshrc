@@ -76,6 +76,8 @@ source $ZSH/oh-my-zsh.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 export PLANET_VENERA_HOME=~/workspace/planet-venera
+export AMPKIT_HOME=~/workspace/M31
+export M31_HOME=~/workspace/M31/ext/andromeda-sdk/submodules/ampkit
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -103,6 +105,8 @@ alias gsur="gsu --recursive"
 alias gpb="gp origin HEAD"
 alias cdvenera="cd $PLANET_VENERA_HOME"
 alias cdconfig="cd /Users/user/Library/Containers/com.nhncorp.vpdt.Gilround/Data/Library/Ampkit"
+alias cdampkit="cd $AMPKIT_HOME"
+alias cdm31="cd $M31_HOME"
 
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
