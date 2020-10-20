@@ -108,6 +108,7 @@ alias cdconfig="cd /Users/user/Library/Containers/com.nhncorp.vpdt.Gilround/Data
 alias cdampkit="cd $AMPKIT_HOME"
 alias cdm31="cd $M31_HOME"
 alias refdb="find . -name '*.c' -o -name '*.cpp' -o -name '*.h' -o -name '*.hpp' > vim.build/cscope.files;cscope -q -R -b -i ./vim.build/cscope.files;mv cscope.* vim.build/"
+# ctags
 
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
