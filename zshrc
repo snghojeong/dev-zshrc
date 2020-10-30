@@ -107,8 +107,7 @@ alias cdvenera="cd $PLANET_VENERA_HOME"
 alias cdconfig="cd /Users/user/Library/Containers/com.nhncorp.vpdt.Gilround/Data/Library/Ampkit"
 alias cdampkit="cd $AMPKIT_HOME"
 alias cdm31="cd $M31_HOME"
-alias refdb="find . -name '*.c' -o -name '*.cpp' -o -name '*.h' -o -name '*.hpp' > vim.build/cscope.files;cscope -q -R -b -i ./vim.build/cscope.files;mv cscope.* vim.build/"
-# cd vim.build; ctags -R ..
+alias refdb="cd ./vim.build;ctags -R ..;cd ..;find . -name '*.c' -o -name '*.cpp' -o -name '*.h' -o -name '*.hpp' > vim.build/cscope.files;cscope -q -R -b -i ./vim.build/cscope.files;mv cscope.* vim.build/"
 
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
