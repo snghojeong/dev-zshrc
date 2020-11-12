@@ -103,6 +103,7 @@ export AMPKIT_HOME=~/workspace/M31/ext/andromeda-sdk/submodules/ampkit
 alias cmk="cmake -DCMAKE_EXPORT_COMPILE_COMMANDS=ON"
 alias gsur="gsu --recursive"
 alias gsuir="gsu --init --recursive"
+alias gcsu="git_submodule_update_commit"
 alias cdvenera="cd $PLANET_VENERA_HOME"
 alias cdconfig="cd /Users/user/Library/Containers/com.nhncorp.vpdt.Gilround/Data/Library/Ampkit"
 alias cdampkit="cd $AMPKIT_HOME"
@@ -117,4 +118,9 @@ prompt_context() {
 
 prompt_dir() {
   prompt_segment blue black '%c'
+}
+
+git_submodule_update_commit() {
+    ga $1
+    gc -m "Update submodule '$1'"
 }
