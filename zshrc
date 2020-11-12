@@ -120,6 +120,8 @@ prompt_dir() {
   prompt_segment blue black '%c'
 }
 
+# functions for aliases
+
 git_submodule_update_commit() {
     ga $1
     gc -m "Update submodule '$1'"
