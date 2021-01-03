@@ -78,6 +78,7 @@ source $ZSH/oh-my-zsh.sh
 export PLANET_VENERA_HOME=~/workspace/planet-venera
 export M31_HOME=~/workspace/M31
 export AMPKIT_HOME=~/workspace/M31/ext/andromeda-sdk/submodules/ampkit
+export PLANETKIT_HOME=~/workspace/planet-kit
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -107,6 +108,7 @@ alias gcsu="git_submodule_update_commit"
 alias cdvenera="cd $PLANET_VENERA_HOME"
 alias cdconfig="cd /Users/user/Library/Containers/com.nhncorp.vpdt.Gilround/Data/Library/Ampkit"
 alias cdampkit="cd $AMPKIT_HOME"
+alias cdpk="cd $PLANETKIT_HOME"
 alias cdm31="cd $M31_HOME"
 alias refdb="cd ./vim.build;ctags -R ..;cd ..;find . -name '*.c' -o -name '*.cpp' -o -name '*.h' -o -name '*.hpp' > vim.build/cscope.files;cscope -q -R -b -i ./vim.build/cscope.files;mv cscope.* vim.build/"
 
